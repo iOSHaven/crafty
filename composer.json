@@ -1,8 +1,18 @@
 {
+  "name": "ioshaven/crafty",
+  "description": "IOS Haven recreated using Craft CMS",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "Zeb",
+          "email": "burroughszeb@me.com"
+      }
+  ],
   "require": {
     "craftcms/cms": "^3.0.0",
-    "doublesecretagency/craft-adwizard": "3.0.2",
-    "vaersaagod/dospaces": "1.1.2",
+    "doublesecretagency/craft-adwizard": "^3.0.2",
+    "vaersaagod/dospaces": "^1.1.2",
     "vlucas/phpdotenv": "^3.4.0"
   },
   "autoload": {
