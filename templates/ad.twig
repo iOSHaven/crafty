@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IOS Haven</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+    {% set ad = craft.adWizard.ads.group('infeed').onlyValid().orderBy('RAND()').first() %}
+    <div style="width:500px; margin:auto;">
+            <a class="sponsor" style="display: flex; background: cornsilk" href="{{ ad.url }}">
+                    <div class="sponsor-image">
+                            {{ 
+                                ad.displayAd({
+                                    'js': {
+                                        'click': 'sda.click({id}, \'{url}\')',
+                                    },
+                                    'attr': {
+                                        'width': '77',
+                                        'height': '77',
+                                        'style': 'border-radius: 1.3rem',
+                                    }
+                                })
+                             }}
+                    </div>
+                    <div class="sponsor-body" style="margin-left: 0.5rem">
+                        <strong>{{  ad.title }}</strong>
+                        <br>
+                        <small>{{ ad.title2 }}</small>
+                    </div>
+                </a>
+    </div>
+    
+    
+</body>
+
+    <script>
+        var sda = {
+            click (id, url) {
+                var data = {id : id};
+                data[window.csrfTokenName] = window.csrfTokenValue;
+                var a = document.createElement("a");
+                a.setAttribute('href', url);
+                a.setAttribute("target", "_blank");
+                window.superagent
+                    .post('/actions/ad-wizard/tracking/click')
+                    .send(data)
+                    .type('form')
+                    .set('X-Requested-With','XMLHttpRequest')
+                    .end(function (response) {
+                        var message = JSON.parse(response.text);
+                        console.log(message);
+                        a.click();
+                    });
+                
+            }
+        }
+    </script>
+</html>
