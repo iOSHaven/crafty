@@ -30,7 +30,7 @@ jobs:
         # Footer for the embed. Defaults to severity.
         #footer: # optional
         # Text to be sent as normal text above the embed. Use context expressions and environment variables to provide information.
-        text: {{ head_commit.message | truncate(128) }} {{ head_commit.id[0:7] }} # optional
+        text: "{{ head_commit.message | truncate(128) }} {{ head_commit.id[0:7] }}" # optional
         # Username to display in discord.
         username: GITHUB BOT # optional
         # Notification color in the form poundsign rrggbb (hex). Default determined by severity.
