@@ -20,7 +20,7 @@ jobs:
       uses: rjstone/discord-webhook-notify@v1.0.1
       with:
         # Discord webhook URL. Should be stored in a secret and inserted as a context expression.
-        webhookUrl: {{ secrets.discord }}
+        webhookUrl: ${{ secrets.discord }}
         # Severity level - info, warn, or error
         severity: info # optional, default is error
         # Embed notification message. Use context expressions and environment variables to provide information. Default provides branch and user info.
