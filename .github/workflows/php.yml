@@ -20,7 +20,7 @@ jobs:
       uses: rjstone/discord-webhook-notify@v1.0.1
       with:
         # Discord webhook URL. Should be stored in a secret and inserted as a context expression.
-        webhookUrl: https://discordapp.com/api/webhooks/652548345104957487/SjLpMofgUqNlW_n0DgKV0eKetaHlc0F5p4YDa3JAuvDN_6SJ4nXMGqITu1ULweQOQYo9
+        webhookUrl: {{ secrets.discord }}
         # Severity level - info, warn, or error
         #severity: info # optional, default is error
         # Embed notification message. Use context expressions and environment variables to provide information. Default provides branch and user info.
@@ -30,7 +30,7 @@ jobs:
         # Footer for the embed. Defaults to severity.
         #footer: # optional
         # Text to be sent as normal text above the embed. Use context expressions and environment variables to provide information.
-        #text: # optional
+        text: {{ head_commit.message | truncate(128) }} {{ head_commit.id[0:7] }} # optional
         # Username to display in discord.
         username: GITHUB BOT # optional
         # Notification color in the form poundsign rrggbb (hex). Default determined by severity.
