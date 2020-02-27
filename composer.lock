@@ -619,6 +619,7 @@
                     "craft\\redactor\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -630,19 +631,12 @@
             ],
             "description": "Edit rich text content in Craft CMS using Redactor by Imperavi.",
             "keywords": [
+                "Redactor",
                 "cms",
                 "craftcms",
                 "html",
-                "redactor",
                 "yii2"
             ],
-            "support": {
-                "email": "support@craftcms.com",
-                "issues": "https://github.com/craftcms/redactor/issues?state=open",
-                "source": "https://github.com/craftcms/redactor",
-                "docs": "https://github.com/craftcms/redactor/blob/v2/README.md",
-                "rss": "https://github.com/craftcms/redactor/commits/v2.atom"
-            },
             "time": "2019-09-13T11:02:32+00:00"
         },
         {
@@ -807,6 +801,7 @@
                     "doublesecretagency\\adwizard\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -818,17 +813,13 @@
             ],
             "description": "Easily manage custom advertisements on your website.",
             "keywords": [
+                "Craft",
                 "ad-wizard",
                 "ads",
                 "cms",
-                "craft",
                 "craft-plugin",
                 "craftcms"
             ],
-            "support": {
-                "docs": "https://www.doublesecretagency.com/plugins/ad-wizard/docs",
-                "issues": "https://github.com/doublesecretagency/craft-adwizard/issues"
-            },
             "time": "2019-08-22T21:07:47+00:00"
         },
         {
@@ -929,16 +920,16 @@
         },
         {
             "name": "enshrined/svg-sanitize",
-            "version": "0.13.0",
+            "version": "0.13.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/darylldoyle/svg-sanitizer.git",
-                "reference": "4cf8d0f61edf9f00b84e162fc229176a362da247"
+                "reference": "bc66593f255b7d2613d8f22041180036979b6403"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/4cf8d0f61edf9f00b84e162fc229176a362da247",
-                "reference": "4cf8d0f61edf9f00b84e162fc229176a362da247",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/bc66593f255b7d2613d8f22041180036979b6403",
+                "reference": "bc66593f255b7d2613d8f22041180036979b6403",
                 "shasum": ""
             },
             "require": {
@@ -966,7 +957,7 @@
                 }
             ],
             "description": "An SVG sanitizer for PHP",
-            "time": "2019-11-07T09:16:31+00:00"
+            "time": "2020-01-20T01:34:17+00:00"
         },
         {
             "name": "ether/tags",
@@ -997,6 +988,7 @@
                     "ether\\tagManager\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -1008,16 +1000,12 @@
             ],
             "description": "A tag manager for Craft 3",
             "keywords": [
+                "Craft",
                 "cms",
-                "craft",
                 "craft-plugin",
                 "craftcms",
                 "tags"
             ],
-            "support": {
-                "docs": "https://github.com/ethercreative/tags/blob/master/README.md",
-                "issues": "https://github.com/ethercreative/tags/issues"
-            },
             "time": "2019-06-26T12:04:24+00:00"
         },
         {
@@ -1424,6 +1412,10 @@
                 "league/flysystem": "^1.0.40",
                 "php": ">=5.5.0"
             },
+            "require-dev": {
+                "henrikbjorn/phpspec-code-coverage": "~1.0.1",
+                "phpspec/phpspec": "^2.0.0"
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1435,6 +1427,7 @@
                     "League\\Flysystem\\AwsS3v3\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1570,6 +1563,9 @@
             "require": {
                 "php": ">=5.4.0"
             },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
             "bin": [
                 "bin/jp.php"
             ],
@@ -1587,6 +1583,7 @@
                     "src/JmesPath.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3179,6 +3176,10 @@
             "require": {
                 "php": ">=7.0"
             },
+            "require-dev": {
+                "phpunit/phpunit": "^6.0",
+                "satooshi/php-coveralls": "^1.0"
+            },
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -3188,6 +3189,7 @@
                     ]
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3343,6 +3345,7 @@
                     "vaersaagod\\dospaces\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3354,20 +3357,14 @@
             ],
             "description": "DigitalOcean Spaces integration for Craft CMS",
             "keywords": [
+                "Flysystem",
                 "aws",
                 "cms",
                 "craftcms",
                 "digitalocean",
-                "flysystem",
                 "spaces",
                 "yii2"
             ],
-            "support": {
-                "issues": "https://github.com/vaersaagod/dospaces/issues?state=open",
-                "source": "https://github.com/vaersaagod/dospaces",
-                "docs": "https://github.com/vaersaagod/dospaces",
-                "rss": "https://github.com/vaersaagod/dospaces/commits/master.atom"
-            },
             "time": "2019-07-30T19:47:59+00:00"
         },
         {
@@ -3400,6 +3397,7 @@
                     "verbb\\comments\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -3411,19 +3409,12 @@
             ],
             "description": "A Craft CMS plugin for managing comments directly within the CMS.",
             "keywords": [
+                "Craft",
                 "cms",
                 "comments",
-                "craft",
                 "craft-plugin",
                 "craftcms"
             ],
-            "support": {
-                "email": "support@verbb.io",
-                "issues": "https://github.com/verbb/comments/issues?state=open",
-                "source": "https://github.com/verbb/comments",
-                "docs": "https://github.com/verbb/comments",
-                "rss": "https://github.com/verbb/comments/commits/v2.atom"
-            },
             "time": "2019-09-18T00:03:47+00:00"
         },
         {
@@ -4479,6 +4470,7 @@
                 "escaper",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-escaper",
             "time": "2019-09-05T20:03:20+00:00"
         },
         {
@@ -4542,6 +4534,7 @@
                 "feed",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-feed",
             "time": "2019-03-05T20:08:49+00:00"
         },
         {
@@ -4588,6 +4581,7 @@
                 "stdlib",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-stdlib",
             "time": "2018-08-28T21:34:05+00:00"
         }
     ],
